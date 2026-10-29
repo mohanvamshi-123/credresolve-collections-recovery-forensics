@@ -1,0 +1,10 @@
+duckdb>=1.0
+pandas
+numpy
+scipy
+statsmodels
+matplotlib
+nbformat
+nbconvert
+ipykernel
+pytest

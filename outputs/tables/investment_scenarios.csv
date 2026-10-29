@@ -1,0 +1,4 @@
+scenario,lift_on_annual_recovery,probability,incremental_recovery_12m_Cr,ROI_12m,incremental_recovery_36m_Cr,ROI_36m
+Downside (data-consistent central case),0.0,0.5,0.0,-1.0,0.0,-1.0
+Base (assumption),0.03,0.35,6.073963735739859,-0.3926036264260141,18.221891207219578,0.8221891207219578
+Upside (assumption),0.08,0.15,16.197236628639626,0.6197236628639626,48.591709885918874,3.8591709885918872

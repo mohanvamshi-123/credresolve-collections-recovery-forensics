@@ -1,0 +1,34 @@
+ord,dataset,step,n,amount
+1,payments,raw rows,25500,1917258617.149993
+2,payments,rejected: duplicate payment_id,500,38366344.26000006
+3,payments,golden rows,25000,1878892272.889994
+4,payments,  of which SUCCESS (gross recovery),17534,1315583964.640001
+5,payments,  of which REVERSED (netted off),1254,94666565.90999988
+6,payments,"  of which PENDING (excluded, unconfirmed)",2535,190223176.36999977
+7,payments,  of which FAILED (excluded),3677,278418565.9700006
+8,payments,"corrected: missing payment_reference (kept, flagged)",371,28007300.549999963
+9,payments,corrected: month changes after IST normalisation,107,7641704.519999999
+10,calls,raw rows,91350,
+11,calls,rejected: duplicate call_id,1350,
+12,calls,golden rows,90000,
+13,calls,corrected: agent_id recovered from sibling duplicate,68,
+14,calls,still missing agent_id (tenure=UNKNOWN),1759,
+15,calls,corrected: IST date differs from source date,8791,
+16,calls,corrected: IST month differs from source month,305,
+17,calls,corrected: IST hour differs from source hour,59962,
+18,calls,non-ANSWERED calls carrying talk duration > 0 (unusable for talk-time),72035,
+19,agents,raw rows,30000,
+20,agents,golden agent_id (latest version wins),1000,
+21,agents,agent_ids with updated_at < joined_at (timestamp conflict),0,
+22,borrowers,raw rows,30600,
+23,borrowers,golden borrower_id,11015,
+24,accounts,accounts with null/orphan borrower_id (state=UNKNOWN),2913,
+25,call_attempts,raw rows,120000,
+26,call_attempts,account_id disagrees with parent call (re-keyed to calls),119992,
+27,call_dispositions,raw rows,35000,
+28,call_dispositions,account_id disagrees with parent call (re-keyed to calls),35000,
+29,call_dispositions,legacy code PTP mapped to PROMISE_TO_PAY,3904,
+30,agent_sessions,raw rows,15000,
+31,agent_sessions,rejected: logout<=login or >14h,0,
+32,account_status_history,recorded_at earlier than event_at (back-dated / overwritten),30191,
+33,payments,payment_reference reused across different accounts (NOT duplicates; do not dedupe on it),3406,

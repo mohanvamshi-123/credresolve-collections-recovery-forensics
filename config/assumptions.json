@@ -1,0 +1,11 @@
+{
+  "_note": "ASSUMPTIONS, not data. The dataset has no cost fields. Every value is an editable input; all cost/ROI outputs are conditional on these.",
+  "agent_cost_per_logged_hour_inr": 180,
+  "voice_cost_per_minute_inr": 0.60,
+  "whatsapp_cost_per_message_inr": 0.80,
+  "sms_cost_per_message_inr": 0.15,
+  "field_cost_per_visit_inr": 250,
+  "ai_voice_cost_per_minute_inr": 3.0,
+  "attribution_window_days": 7,
+  "raw_business_day_hours_ist": [8, 19]
+}
